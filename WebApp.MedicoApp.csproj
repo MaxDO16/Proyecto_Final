@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Medicos\" />
+    <Folder Include="wwwroot\Images\Pacientes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtentReports" Version="5.0.4" />
+    <PackageReference Include="ExtentReports.signed" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.12" />
+    <PackageReference Include="NUnit" Version="4.2.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+    <PackageReference Include="Selenium.Support" Version="4.27.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.27.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="131.0.6778.8700" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedicosApp.Core.Application\MedicosApp.Core.Application.csproj" />
+    <ProjectReference Include="..\MedicosApp.Infrastructure.Persistence\MedicosApp.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
